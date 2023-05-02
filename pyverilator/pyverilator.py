@@ -440,6 +440,7 @@ class PyVerilator:
                             '--cc',
                             '--coverage',
                             top_verilog_file,
+                            "--no-timing",
                             '--exe',
                             verilator_cpp_wrapper_path]
         call_process(verilator_args, output_stream=output_stream)
